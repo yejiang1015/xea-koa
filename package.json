@@ -2,9 +2,27 @@
   "name": "@xea/koa",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "koa",
+  "homepage": "https://github.com/yejiang1015/xea-koa#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yejiang1015/xea-koa.git"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "license": "MIT",
   "scripts": {
     "tsc": "tsc -w"
+  },
+  "keywords": [
+    "koa",
+    "node"
+  ],
+  "author": "yejiang1015",
+  "bugs": {
+    "url": "https://github.com/yejiang1015/xea-koa/issues"
   },
   "dependencies": {
     "@types/fs-extra": "^8.1.0",
