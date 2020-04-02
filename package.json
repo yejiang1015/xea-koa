@@ -27,9 +27,12 @@
     "@types/koa": "^2.11.3",
     "@types/koa-router": "^7.4.0",
     "chalk": "^4.0.0",
+    "cross-env": "^7.0.2",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^8.0.8",
-    "koa2-cors": "^2.0.6"
+    "koa2-cors": "^2.0.6",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.8.1"
   }
 }

@@ -2,11 +2,31 @@
 
 ## node 模板 快速测试
 
+### install
+
+```bash
+
+yarn add @xea/koa
+
+```
+
 #### packages
 
 ```json
-yarn add chalk cross-env fs-extra koa koa-bodyparser koa-router koa-static koa2-cors nodemon request request-promise ts-node typescript @types/fs-extra @types/koa @types/koa-bodyparser @types/koa-router @types/koa-static @types/koa2-cors @types/node @types/request-promise
-
+{
+	"dependencies": {
+		"@types/koa": "^2.11.3",
+		"@types/koa-router": "^7.4.0",
+		"chalk": "^4.0.0",
+		"cross-env": "^7.0.2",
+		"koa": "^2.11.0",
+		"koa-bodyparser": "^4.3.0",
+		"koa-router": "^8.0.8",
+		"koa2-cors": "^2.0.6",
+		"nodemon": "^2.0.2",
+		"ts-node": "^8.8.1"
+	}
+}
 ```
 
 #### nodemon
@@ -44,7 +64,28 @@ yarn add chalk cross-env fs-extra koa koa-bodyparser koa-router koa-static koa2-
 }
 ```
 
-#### scripts
+## use
+
+1. create tsconfig.json
+2. index.ts
+
+```js
+import * as Koa from "koa";
+
+import { app, listen, route } from "@xea/koa";
+
+route(route => {
+	route.get("/", (ctx: Koa.Context) => {
+		ctx.body = "hello";
+	});
+
+	return route;
+});
+
+listen("/apis", 3000);
+```
+
+3. scripts
 
 ```json
 {
@@ -57,18 +98,9 @@ yarn add chalk cross-env fs-extra koa koa-bodyparser koa-router koa-static koa2-
 }
 ```
 
-## use
+4. start
 
-1. create tsconfig.json
-2. index.ts
+```bash
+yarn serve
 
-```js
-import { app, route, listen } from "@xea/koa";
-
-route(router => {
-	router.get("/", (ctx: Koa.Context) => {});
-	return router;
-});
-
-app.listen();
 ```
