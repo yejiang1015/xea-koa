@@ -1,7 +1,7 @@
 {
   "name": "@xea/koa",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "main": "./index.js",
   "description": "koa",
   "homepage": "https://github.com/yejiang1015/xea-koa#readme",
   "repository": {
@@ -25,13 +25,6 @@
     "url": "https://github.com/yejiang1015/xea-koa/issues"
   },
   "dependencies": {
-    "@types/fs-extra": "^8.1.0",
-    "@types/koa": "^2.11.2",
-    "@types/koa-bodyparser": "^4.3.0",
-    "@types/koa-router": "^7.4.0",
-    "@types/koa-static": "^4.0.1",
-    "@types/node": "12.12.30",
-    "@types/request-promise": "^4.1.46",
     "chalk": "^3.0.0",
     "cross-env": "^7.0.2",
     "fs-extra": "^9.0.0",
@@ -46,5 +39,16 @@
     "request-promise": "^4.2.5",
     "ts-node": "^8.7.0",
     "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.1.0",
+    "@types/koa": "^2.11.2",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-log4": "^2.3.1",
+    "@types/koa-router": "^7.4.0",
+    "@types/koa-static": "^4.0.1",
+    "@types/koa2-cors": "^2.0.1",
+    "@types/node": "12.12.30",
+    "@types/request-promise": "^4.1.46"
   }
 }
