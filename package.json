@@ -1,6 +1,6 @@
 {
   "name": "@xea/koa",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./index.js",
   "description": "koa",
   "author": "yejiang1015",
