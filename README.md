@@ -5,24 +5,8 @@
 #### packages
 
 ```json
-{
-	"dependencies": {
-		"chalk": "^3.0.0",
-		"cross-env": "^7.0.2",
-		"fs-extra": "^9.0.0",
-		"koa": "^2.11.0",
-		"koa-bodyparser": "^4.3.0",
-		"koa-log4": "^2.3.2",
-		"koa-router": "^8.0.8",
-		"koa-static": "^5.0.0",
-		"koa2-cors": "^2.0.6",
-		"nodemon": "^2.0.2",
-		"request": "^2.88.2",
-		"request-promise": "^4.2.5",
-		"ts-node": "^8.7.0",
-		"typescript": "^3.8.3"
-	}
-}
+yarn add chalk cross-env fs-extra koa koa-bodyparser koa-router koa-static koa2-cors nodemon request request-promise ts-node typescript @types/fs-extra @types/koa @types/koa-bodyparser @types/koa-router @types/koa-static @types/koa2-cors @types/node @types/request-promise
+
 ```
 
 #### nodemon
