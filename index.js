@@ -13,10 +13,10 @@ const instance = new Koa();
 instance.use(bodyparser());
 
 /** export const */
-export const app = instance;
+exports.app = instance;
 
 /** export const */
-export const route = handle => {
+exports.route = handle => {
 	const _route = handle(router);
 	instance.use(_route.routes());
 	instance.use(_route.allowedMethods());
@@ -33,7 +33,7 @@ for (let key in interfaces) {
 }
 
 /** export const */
-export const listen = (prefix = "", port = 9090, hostname = "0.0.0.0", listeningListener) => {
+exports.listen = (prefix = "", port = 9090, hostname = "0.0.0.0", listeningListener) => {
 	const _listeningListener = () => {
 		console.info(``);
 		console.info(`App running at:`);
@@ -48,7 +48,7 @@ export const listen = (prefix = "", port = 9090, hostname = "0.0.0.0", listening
 };
 
 /** export const cors */
-export const cors = options => {
+exports.cors = options => {
 	if (options) {
 		instance.use(cors(options));
 	} else {
@@ -58,6 +58,5 @@ export const cors = options => {
 
 // Make the export immutable
 Object.defineProperty(module, "exports", {
-	enumerable: true,
-	get: assembleStyles
+	enumerable: true
 });
