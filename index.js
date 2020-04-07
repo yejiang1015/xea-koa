@@ -56,6 +56,27 @@ exports.cors = options => {
 	}
 };
 
+exports.send = {
+	succ(ctx, data, msg) {
+		const _succ = {
+			data: data || null,
+			code: 0,
+			msg: msg || "succ"
+		};
+		ctx.status = 200;
+		ctx.body = _succ;
+	},
+	fail(ctx, msg) {
+		const _fail = {
+			data: null,
+			code: 1,
+			msg: msg || "fail"
+		};
+		ctx.status = 200;
+		ctx.body = _fail;
+	}
+}
+
 // Make the export immutable
 Object.defineProperty(module, "exports", {
 	enumerable: true
